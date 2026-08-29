@@ -224,9 +224,11 @@
   /* Moment */
   .moment-photo{
     width:100%; border-radius:16px; overflow:hidden; box-shadow: 0 10px 22px rgba(18,42,84,0.18);
-    margin-bottom:18px; aspect-ratio:9/16; max-height:70vh; background: linear-gradient(135deg, var(--gray-light), var(--blue-pale));
+    margin-bottom:18px; background: var(--blue-deep);
+    display:flex; align-items:center; justify-content:center;
   }
-  .moment-photo img, .moment-photo video{ width:100%; height:100%; object-fit:cover; display:block; }
+  .moment-photo img{ width:100%; height:auto; display:block; }
+  .moment-photo video{ width:100%; height:auto; max-height:70vh; display:block; }
   .moment-text{
     font-family:'Caveat', cursive; font-size:22px; line-height:1.5; color:var(--blue-deep);
     background: rgba(255,255,255,0.6); border-left:4px solid var(--blue-bright); padding:16px 18px; border-radius:0 12px 12px 0;
